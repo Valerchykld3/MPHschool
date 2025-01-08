@@ -1,0 +1,3542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPHschool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+            background-color: #fafafa;
+        }
+
+        @media (max-width: 1000px) {
+        body {
+            font-weight: 450;
+        }
+
+        @media (max-width: 1000px) and (min-width: 630px) {
+        .tytul {
+            display: block;
+            background-color: black;
+            /*padding: 10px 70px;*/
+            color: white;
+            font-weight: bold;
+            height: 140px;
+        }
+
+        .nazva {
+            font-size: 70px;
+            position: relative;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .nazva::after {
+            content: '.';
+            color: #00FFFF;
+            font-size: 70px;
+            position: absolute;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .navigator {
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: -30px;
+            text-align: center;
+        }
+
+        .navigator a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            position: relative;
+        }
+        }
+
+        @media (max-width: 630px) and (min-width: 405px) {
+            .tytul {
+            display: block;
+            background-color: black;
+            /*padding: 10px 70px;*/
+            color: white;
+            font-weight: bold;
+            height: 90px;
+        }
+
+        .nazva {
+            font-size: 40px;
+            position: relative;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .nazva::after {
+            content: '.';
+            color: #00FFFF;
+            font-size: 40px;
+            position: absolute;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .navigator {
+            gap: 15px;
+            display: flex;
+            justify-content: center;
+            margin-top: -15px;
+            text-align: center;
+        }
+
+        .navigator a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .nextTytul {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 150px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 130px !important;
+            height: 130px !important;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 5px;
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mainNazva1 {
+            font-size: 17px !important;
+        }
+
+        .mainNazva2 {
+            font-size: 22px !important;
+        }
+
+        .mainNazva2::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 22px !important;
+        }
+
+        .mainNazva2::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 22px !important;
+            position: absolute;
+        }
+
+        #Ph::before {
+            content: 'Ф';
+            color: #00FFFF;
+            font-size: 17px !important;
+        }
+
+        #Ph::after {
+            content: 'М';
+            color: #00FFFF;
+            font-size: 17px !important;
+        }
+
+        @media (max-width: 630px) and (min-width: 470px) {
+        .mainNazva {
+            margin-right: 8% !important;
+        }
+        .logo {
+            margin-left: 5% !important;
+        }
+        .mainNazva1 {
+            font-size: 19px !important;
+        }
+        .mainNazva2 {
+            font-size: 27px !important;
+        }
+        }
+        }
+
+        @media (max-width: 405px) {
+            .tytul {
+            display: block;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .nazva {
+            font-size: 40px;
+            position: relative;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .nazva::after {
+            content: '.';
+            color: #00FFFF;
+            font-size: 40px;
+            position: absolute;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .navigator {
+            display: none;
+        }
+
+        .nextTytul {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 100px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px !important;
+            height: 90px !important;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 10px;
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mainNazva {
+            margin-right: 0 !important;
+            margin-top: 50px !important;
+        } 
+        @media (max-width: 405px) and (min-width: 330px) {
+        .mainNazva {
+            margin-right: 10% !important;
+            margin-top: 50px !important;
+        } 
+        }
+
+        .mainNazva1 {
+            font-size: 13px !important;
+        }
+
+        .mainNazva2 {
+            font-size: 18px !important;
+        }
+
+        .mainNazva2::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 18px !important;
+        }
+
+        .mainNazva2::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 18px !important;
+            position: absolute;
+        }
+
+        #Ph::before {
+            content: 'Ф';
+            color: #00FFFF;
+            font-size: 13px !important;
+        }
+
+        #Ph::after {
+            content: 'М';
+            color: #00FFFF;
+            font-size: 13px !important;
+        }
+        }
+
+        @media (max-width: 1000px) and (min-width:800px){.nextTytul {
+            background-image: url(needed/mobiletone.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 370px;
+        }}
+        @media (max-width: 800px) and (min-width: 630px) {
+        .nextTytul {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            height: 250px;
+        }
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 5px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 650px) {
+
+        .mainNazva1 {
+            font-size: 15px;
+        }
+
+        .mainNazva2 {
+            font-size: 20px;
+        }
+        }
+
+        .mainNazva {
+            text-align: center;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+        .mainNazva {
+            margin-right: 5%;
+        }
+        }
+
+        .mainNazva .mainNazva1 {
+            font-size: 30px;
+            margin-top: -35px;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 1s forwards;
+        }
+
+        .mainNazva .mainNazva2 {
+            font-size: 40px;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 2s forwards;
+            margin-right: 27px;
+        }
+
+        .zaklyk0 {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Початкове зміщення */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Повернення на місце */
+    }
+}
+
+        .mainNazva2::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 40px;
+        }
+
+        .mainNazva2::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 40px;
+            position: absolute;
+        }
+
+        #Ph::before {
+            content: 'Ф';
+            color: #00FFFF;
+            font-size: 30px;
+        }
+
+        #Ph::after {
+            content: 'М';
+            color: #00FFFF;
+            font-size: 30px;
+        }
+
+        @media (max-width: 1000px) and (min-width: 700px) {
+        .reklama {
+            background-color: #fafafa;
+            height: 580px;
+            display: block;
+            align-items: center;
+            color: black;
+        }
+
+        .reklama1 {
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -15px;
+        }
+
+        .reklama10 {
+            font-weight: bold;
+            font-size: 40px;
+            color: #01257D;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama10::after {
+            content: '!';
+            color: #01257D;
+            font-weight: bold;
+            font-size: 40px;
+            font-family: "Merriweather", serif;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 7s forwards;
+        }
+
+        .reklama11 {
+            font-size: 30px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .reklama1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 35px;
+            padding: 15px 25px 15px 25px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .reklama1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .contact {
+            line-height: 1.5;
+            color: #01257D;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(234, 100%, 19%, 0.83);
+            font-size: 30px;
+            width: 50%; 
+            height: fit-content;
+            box-sizing: border-box;
+            margin-top: 30px;
+            align-items: center;
+            margin-left: 25%;
+        }
+
+        .telegram-link {
+            display: flex;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: -40px;
+        }
+
+        .telegram-link img {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .viber {
+            color: black;
+            font-size: 20px;
+        }
+
+        .viber img {
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #empty {
+            color: white;
+        }}
+
+        @media (max-width: 700px) and (min-width: 480px) {
+        .reklama {
+            background-color: #fafafa;
+            height: 470px;
+            display: block;
+            align-items: center;
+            color: black;
+        }
+
+        .reklama1 {
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -15px;
+        }
+
+        .reklama10 {
+            font-weight: bold;
+            font-size: 30px;
+            color: #01257D;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama10::after {
+            content: '!';
+            color: #01257D;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: "Merriweather", serif;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 7s forwards;
+        }
+
+        .reklama11 {
+            font-size: 20px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .reklama1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .reklama1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .contact {
+            line-height: 1.5;
+            color: #01257D;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(234, 100%, 19%, 0.83);
+            font-size: 25px;
+            width: 50%; 
+            height: fit-content;
+            box-sizing: border-box;
+            margin-top: 20px;
+            align-items: center;
+            margin-left: 25%;
+        }
+
+        .telegram-link {
+            display: flex;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            margin-top: -30px;
+        }
+
+        .telegram-link img {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .viber {
+            color: black;
+            font-size: 15px;
+        }
+
+        .viber img {
+            width: 20px;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #empty {
+            color: white;
+        }
+        }
+
+        @media (max-width: 480px) and (min-width: 400px) {
+        .reklama {
+            background-color: #fafafa;
+            height: 400px;
+            display: block;
+            align-items: center;
+            color: black;
+        }
+
+        .reklama1 {
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -15px;
+        }
+
+        .reklama10 {
+            font-weight: bold;
+            font-size: 23px;
+            color: #01257D;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama10::after {
+            content: '!';
+            color: #01257D;
+            font-weight: bold;
+            font-size: 23px;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama11 {
+            font-size: 15px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .reklama1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .reklama1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .contact {
+            line-height: 1.5;
+            color: #01257D;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(234, 100%, 19%, 0.83);
+            font-size: 20px;
+            width: fit-content; 
+            height: fit-content;
+            box-sizing: border-box;
+            margin-top: 30px;
+            align-items: center;
+            margin-left: 15%;
+        }
+
+        .telegram-link {
+            display: flex;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            margin-top: -15px;
+        }
+
+        .telegram-link img {
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .viber {
+            color: black;
+            font-size: 15px;
+        }
+
+        .viber img {
+            width: 15px;
+            height: 15px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #empty {
+            color: white;
+        }
+        }
+
+        @media (max-width: 400px) {
+        .reklama {
+            background-color: #fafafa;
+            height: 370px;
+            display: block;
+            align-items: center;
+            color: black;
+        }
+
+        .reklama1 {
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -15px;
+        }
+
+        .reklama10 {
+            font-weight: bold;
+            font-size: 19px;
+            color: #01257D;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama10::after {
+            content: '!';
+            color: #01257D;
+            font-weight: bold;
+            font-size: 19px;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama11 {
+            font-size: 12px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .reklama1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .reklama1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .contact {
+            line-height: 1.5;
+            color: #01257D;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(234, 100%, 19%, 0.83);
+            font-size: 18px;
+            width: fit-content; 
+            height: fit-content;
+            box-sizing: border-box;
+            margin-top: 30px;
+            align-items: center;
+            margin-left: 10%;
+        }
+
+        .telegram-link {
+            display: flex;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            font-size: 10px;
+            margin-top: -15px;
+        }
+
+        .telegram-link img {
+            width: 15px;
+            height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .viber {
+            color: black;
+            font-size: 10px;
+        }
+
+        .viber img {
+            width: 15px;
+            height: 15px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #empty {
+            color: white;
+        }
+        }
+
+        .motyvacia {
+            display: none;
+        }
+
+        .proNavchannia {
+            background-color: #fafafa;
+            color: black;
+        }
+
+        .proNavchannia h1 {
+            text-align: center;
+            color: #01257D;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia h1 span::before {
+            content: '"';
+            color: #01257D;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia h1 span::after {
+            content: '"';
+            color: #01257D;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 1000px) and (min-width: 550px) {
+        .pidhid {
+            width: 89%;
+        }
+
+        .gnuchkist {
+            width: 94%;
+        }
+
+        .pidtrymka {
+            width: 83%;
+        }
+
+        .she {
+            width: 62%;
+            height: 120px;
+        }
+
+        .proNavchannia h2 {
+            margin: 5px 0 10px 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .proNavchannia img {
+            width: 50px;
+            height: 50px;
+            margin-left: 15px;
+        }
+
+        .proNavchannia ul {
+            list-style: disc;
+            padding-left: 0;
+            margin-left: 70px;
+            margin-top: -55px;
+        }
+
+        .proNavchannia li {
+            font-size: 20px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .proNavchannia li::before {
+            content: '•';
+            color: black;
+            font-size: 20px;
+        }}
+
+        @media (max-width: 550px) {
+
+        .proNavchannia h1 {
+            font-size: 30px !important;
+        }
+        @media (max-width: 365px) {
+        .proNavchannia h1 {
+            font-size: 20px !important;
+        }
+        .proNavchannia span::before {
+            font-size: 20px !important;
+        }
+        .proNavchannia span::after {
+            font-size: 20px !important;
+        }
+        }
+
+        .pidhid {
+            width: 90%;
+        }
+
+        .gnuchkist {
+            width: 90%;
+        }
+
+        .pidtrymka {
+            width: 90%;
+        }
+
+        .she {
+            width: 90%;
+            height: 85px;
+        }
+
+        .proNavchannia h2 {
+            margin: 5px 0 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .proNavchannia img {
+            width: 40px;
+            height: 40px;
+            margin-left: 15px;
+        }
+
+        .proNavchannia ul {
+            list-style: disc;
+            padding-left: 0;
+            margin-left: 70px;
+            margin-top: -48px;
+        }
+
+        .proNavchannia li {
+            font-size: 15px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .proNavchannia li::before {
+            content: '•';
+            color: black;
+            font-size: 20px;
+        }
+        }
+
+        .buttons1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        .buttons1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 40px;
+            padding: 20px 40px 20px 40px;
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+        } 
+        @media (max-width: 855px) and (min-width: 600px) {
+        .buttons1 a {
+            font-size: 25px !important;
+        }
+        }
+        @media (max-width: 600px) {
+        .buttons1 a {
+            font-size: 18px !important;
+            text-align: center;
+        }
+        }
+        
+        .buttons1 a:hover {
+            color: #00FFFF;
+            background-color: #01257D;
+        }
+        
+        
+        @media (max-width: 1000px) and (min-width: 510px) {
+        .kursy {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            height: 255px;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+        @media (max-width: 1000px) and (min-width: 910px) {
+        .kursy {
+            height: 200px !important;
+        }
+        }
+
+        .kursy h1 {
+            text-align: center;
+            font-size: 35px;
+            padding-top: 20px;
+        }
+
+        .kursy h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .kursy span {
+            color: #00FFFF;
+        }
+
+        .kursy span::before {
+            content: '🌟';
+            font-size: 35px;
+        }
+
+        .kursy span::after {
+            content: '🌟';
+            font-size: 35px;
+        }}
+        @media (max-width: 510px) {
+        .kursy {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            height: 170px;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+        @media (max-width: 400px) {
+        .kursy h2 {
+            font-size: 13px !important;
+        }
+        .kursy {
+            height: 200px !important;
+        }
+        }
+
+        .kursy h1 {
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+        }
+
+        .kursy h2 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .kursy span {
+            color: #00FFFF;
+        }
+
+        .kursy span::before {
+            content: '🌟';
+            font-size: 25px;
+        }
+
+        .kursy span::after {
+            content: '🌟';
+            font-size: 25px;
+        }
+        }
+
+        @media (max-width: 1000px) and (min-width: 660px) {
+        .kursy0 {
+            background-color: #fafafa;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .kursy0 div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-top: 10px;
+            flex-shrink: 0;
+            justify-content: center;
+            height: fit-content;
+        }
+
+        .nmt0 {
+            width: 49%;
+            margin-right: 1%;
+        }
+
+        .nmt1 {
+            width: 49%;
+        }
+
+        .grupove {
+            width: 49%;
+            margin-right: 1%;
+        }
+
+        .indyvid {
+            width: 49%;
+        }
+
+        .kursy0 h1 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 25px;
+            margin-left: 10px;
+            margin-top: -1px;
+        }
+
+        .kursy0 span {
+            color: #01257D;
+        }
+
+        .nmt0 h1::after {
+            content: '📚';
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        .mainInfo0 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .grupove h1::after {
+            content: ' 📈';
+            font-size: 40px;
+        }
+
+        .mainInfo3 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .kursy0 h2 {
+            display: none;
+        }
+
+        .kursy0 ul {
+            display: none;
+        }
+
+        .opys0 {
+            text-decoration: underline;
+        }
+
+        .nmt1 h1::after {
+            content: '🚀';
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        .indyvid span::after {
+            content: '👤';
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        .mainInfo1 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .mainInfo2 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        .indyvid span {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .cina2 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 25px;
+            margin-left: 10px;
+            margin-top: -1px;
+            color: #01257D;
+        }
+
+        .granit {
+            font-weight: bold;
+            text-align: center;
+            font-family: "Merriweather", serif;
+            background-color: #fafafa;
+        }
+
+        .granit h1 {
+            font-size: 25px;
+            color: black;
+        }
+
+        .granit span {
+            color: #01257D;
+            font-size: 30px;
+        }
+
+
+        .kursy0 div:hover a {
+            color: #00FFFF;
+            background-color: #01257D;
+        }
+
+        .zakaz {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .zakaz a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 12px 25px 12px 25px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        #proGrupove {
+            font-size: 15px;
+            text-align: left;
+            margin-left: 5px;
+            font-weight: bold;
+        }}
+
+        @media (max-width: 660px) {
+        .kursy0 {
+            background-color: #fafafa;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .kursy0 div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-top: 10px;
+            flex-shrink: 0;
+            justify-content: center;
+            height: fit-content;
+        }
+
+        .nmt0 {
+            width: 48%;
+            margin-right: 1%;
+        }
+
+        .nmt1 {
+            width: 48%;
+        }
+
+        .grupove {
+            width: 48%;
+            margin-right: 1%;
+        }
+
+        .indyvid {
+            width: 48%;
+        }
+
+        .kursy0 h1 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-top: -1px;
+        }
+
+        .kursy0 span {
+            color: #01257D;
+        }
+
+        .nmt0 h1::after {
+            content: '📚';
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .mainInfo0 {
+            font-size: 10px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .grupove h1::after {
+            content: ' 📈';
+            font-size: 20px;
+        }
+
+        .mainInfo3 {
+            font-size: 10px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .kursy0 h2 {
+            display: none;
+        }
+
+        .kursy0 ul {
+            display: none;
+        }
+
+        .opys0 {
+            text-decoration: underline;
+        }
+
+        .nmt1 h1::after {
+            content: '🚀';
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .indyvid span::after {
+            content: '👤';
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .mainInfo1 {
+            font-size: 10px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .mainInfo2 {
+            font-size: 10px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+            /*margin-top: -20px;*/
+        }
+
+        .indyvid span {
+            font-size: 10px;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .cina2 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: -1px;
+            color: #01257D;
+        }
+
+        .granit {
+            font-weight: bold;
+            text-align: center;
+            font-family: "Merriweather", serif;
+            background-color: #fafafa;
+        }
+
+        .granit h1 {
+            font-size: 15px;
+            color: black;
+        }
+
+        .granit span {
+            color: #01257D;
+            font-size: 20px;
+        }
+
+
+        .kursy0 div:hover a {
+            color: #00FFFF;
+            background-color: #01257D;
+        }
+
+        .zakaz {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .zakaz a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 10px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        #proGrupove {
+            font-size: 10px;
+            text-align: left;
+            margin-left: 5px;
+            font-weight: bold;
+            margin-top: 7px;
+        }
+        }
+
+        
+        .kontakty0 {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            /*height: 400px;*/
+        }
+
+        .kontakty0 h1 {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 15px;
+        }
+
+        #toivo {
+            padding: 20px;
+        }
+
+        #soivo {
+            font-size: 25px;
+            padding-left: 20px;
+        }
+
+        .dopomoga {
+            display: flex;
+            font-size: 20px;
+            margin-top: 5px;
+            margin-left: 55px;
+            color: #00FFFF;
+            font-weight: bold;
+        }
+
+        .kontakty0 img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-right: 15px;
+        }
+
+
+
+        }
+        /*вище - для екранів телефону*/
+
+        @media (max-width: 1260px) and (min-width: 1000px) {
+            body {
+            font-weight: 450;
+        }
+
+        .tytul {
+            display: block;
+            background-color: black;
+            padding: 10px 70px;
+            color: white;
+            font-weight: bold;
+            height: 175px;
+            width: 120%;
+        }
+
+        .nazva {
+            font-size: 80px;
+            position: relative;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .nazva::after {
+            content: '.';
+            color: #00FFFF;
+            font-size: 80px;
+            position: absolute;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .navigator {
+            gap: 30px;
+            display: flex;
+            justify-content: center;
+            margin-top: -30px;
+            text-align: center;
+        }
+
+        .navigator a {
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+            position: relative;
+        }
+
+        .navigator a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #00FFFF;
+        }
+
+        @media (max-width: 1260px) and (min-width:1100px) {
+
+        .nextTytul {
+            margin: 0;
+            background-image: url(needed/nextTytul.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 370px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 70px;
+            width: 126%;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 50px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }}
+
+        @media (max-width: 1100px) and (min-width: 1000px) {
+        .nextTytul {
+            margin: 0;
+            background-image: url(needed/nextTytul.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 370px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 70px;
+            width: 127%;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 35px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        }
+
+        .mainNazva {
+            margin-right: 1%;
+        }
+
+        .mainNazva1 {
+            font-size: 40px !important;
+            margin-right: 0 !important;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 1s forwards;
+        }
+
+        .mainNazva2 {
+            font-size: 70px !important;
+            margin-right: 220px !important;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 2s forwards;
+        }
+
+        .zaklyk0 {
+            font-size: 45px !important;
+            margin-right: 280px !important;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 3s forwards;
+        }
+
+        .zaklyk0::before {
+            content: 'Д';
+            color: #00FFFF;
+        }
+
+        .zaklyk0::after {
+            content: '!';
+            color: #00FFFF;
+        }
+
+        .mainNazva2::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 70px;
+        }
+
+        .mainNazva2::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 70px;
+            position: absolute;
+        }
+
+        #Ph::before {
+            content: 'Ф';
+            color: #00FFFF;
+            font-size: 40px;
+        }
+
+        #Ph::after {
+            content: 'М';
+            color: #00FFFF;
+            font-size: 40px;
+        }
+
+        @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Початкове зміщення */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Повернення на місце */
+    }
+}
+        
+        .reklama {
+            background-color: #fafafa;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: black;
+        }
+
+        .reklama1 {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            margin-top: -5px;
+            margin-left: -15px;
+        }
+
+        .reklama10 {
+            font-weight: bold;
+            font-size: 50px;
+            color: #01257D;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama10::after {
+            content: '!';
+            color: #01257D;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: "Merriweather", serif;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 7s forwards;
+        }
+
+        .reklama11 {
+            font-size: 30px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .reklama1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 35px;
+            padding: 20px 40px 20px 40px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .reklama1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .contact {
+            line-height: 1.5;
+            color: #01257D;
+            font-weight: bold;
+            margin-top: -80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(234, 100%, 19%, 0.83);
+            font-size: 35px;
+            margin-right: -31%;
+            width: 630px; 
+            height: 320px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .telegram-link {
+            display: flex;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            margin-top: -25px;
+            font-size: 30px;
+        }
+
+        .telegram-link img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .viber {
+            color: black;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .viber img {
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #empty {
+            color: white;
+        }
+
+        .motyvacia {
+            display: none;
+        }
+
+        .proNavchannia {
+            background-color: #fafafa;
+            color: black;
+        }
+
+        .proNavchannia h1 {
+            text-align: center;
+            margin-left: 400px;
+            color: #01257D;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia h1 span::before {
+            content: '"';
+            color: #01257D;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia h1 span::after {
+            content: '"';
+            color: #01257D;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .pidhid {
+            width: 100% !important;
+        }
+
+        .gnuchkist {
+            width: 120% !important;
+        }
+
+        .pidtrymka {
+            width: 105% !important;
+        }
+
+        .she {
+            width: 80% !important;
+            height: 175px !important;
+        }
+
+        .proNavchannia h2 {
+            margin: 5px 0 10px 20px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .proNavchannia img {
+            width: 80px;
+            height: 80px;
+            margin-left: 15px;
+        }
+
+        .proNavchannia ul {
+            list-style: disc;
+            padding-left: 0;
+            margin-left: 110px;
+            margin-top: -90px;
+        }
+
+        .proNavchannia li {
+            font-size: 30px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .proNavchannia li::before {
+            content: '•';
+            color: black;
+            font-size: 40px;
+            margin-top: 8px;
+        }
+
+        .buttons1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        .buttons1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 40px;
+            padding: 20px 40px 20px 40px;
+            border-radius: 30px;
+            margin-top: 20px;
+            /*margin-left: 50px;*/
+        }
+
+        .buttons1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .kursy {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            height: 280px;
+            width: 133%;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .kursy h1 {
+            text-align: center;
+            font-size: 50px;
+            padding-top: 20px;
+        }
+
+        .kursy h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .kursy span {
+            color: #00FFFF;
+        }
+
+        .kursy span::before {
+            content: '🌟';
+            font-size: 50px;
+        }
+
+        .kursy span::after {
+            content: '🌟';
+            font-size: 50px;
+        }
+
+        .kursy0 {
+            background-color: #fafafa;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .kursy0 div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: block;
+            justify-content: center;
+            height: fit-content;
+            box-sizing: border-box;
+        }
+
+        .nmt0 {
+            width: 24%;
+            margin-right: 10px;
+        }
+
+        .nmt1 {
+            width: 24%;
+            margin-right: 1%;
+        }
+
+        .grupove {
+            width: 24%;
+            margin-right: 1%;
+        }
+
+        .indyvid {
+            width: 24%;
+        }
+
+        .kursy0 h1 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 35px;
+            margin-left: 10px;
+            margin-top: -1px;
+        }
+
+        .kursy0 span {
+            color: #01257D;
+        }
+
+        .nmt0 h1::after {
+            content: '📚';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .mainInfo0 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .grupove h1::after {
+            content: ' 📈';
+            font-size: 50px;
+        }
+
+        .mainInfo3 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .kursy0 h2 {
+            display: none;
+        }
+
+        .kursy0 ul {
+            display: none;
+        }
+
+        .opys0 {
+            text-decoration: underline;
+        }
+
+        .nmt1 h1::after {
+            content: '🚀';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .indyvid span::after {
+            content: '👤';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .mainInfo1 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .mainInfo2 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        .indyvid span {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .parni span::after {
+            content: '👥';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .cina2 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 35px;
+            margin-left: 10px;
+            margin-top: -1px;
+            color: #01257D;
+        }
+
+        .granit {
+            font-weight: bold;
+            text-align: center;
+            font-family: "Merriweather", serif;
+            background-color: #fafafa;
+            margin-left: 340px;
+        }
+
+        .granit h1 {
+            font-size: 37px;
+            color: black;
+        }
+
+        .granit span {
+            color: #01257D;
+            font-size: 44px;
+        }
+
+        .kursy0 div:hover {
+            color: #00FFFF;
+            background-color: #022171;
+        }
+
+        .kursy0 div:hover span  {
+            color: #00FFFF;
+        }
+
+        .kursy0 div:hover h2  {
+            color: #00FFFF;
+        }
+
+        .kursy0 div:hover a {
+            color: #00FFFF;
+            background-color: #01257D;
+        }
+
+        .zakaz {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .zakaz a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 15px 35px 15px 35px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        #proGrupove {
+            font-size: 15px;
+            text-align: left;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+
+        .kontakty0 {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            height: 600px;
+            width: 133%;
+        }
+
+        .kontakty0 h1 {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-left: 15px;
+        }
+
+        #toivo {
+            padding: 20px;
+        }
+
+        #soivo {
+            font-size: 35px;
+            padding-left: 20px;
+        }
+
+        .dopomoga {
+            display: flex;
+            font-size: 45px;
+            margin-top: 5px;
+            margin-left: 105px;
+            color: #00FFFF;
+            font-weight: bold;
+        }
+
+        .kontakty0 img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-right: 15px;
+        }
+
+        }
+
+         /*вище - планшети, а нижче - ноути й компи*/
+
+        @media (min-width: 1260px) {
+
+        @media (max-width: 1400px) and (min-width: 1260px) {
+        .tytul {
+            height: 32px !important;
+        }
+
+        .nazva {
+            font-size: 40px !important;
+        }
+
+        .nazva::after {
+            font-size: 40px !important;
+        }
+
+        .navigator {
+            gap: 28px !important;
+        }
+
+        .navigator a {
+            font-size: 30px !important;
+        }
+
+        .logo {
+            width: 330px !important;
+            height: 330px !important;
+            margin-left: 25px !important;
+        }
+
+        @media (max-width: 1300px) and (min-width: 1260px) {
+        .logo {
+            width: 300px !important;
+            height: 300px !important;
+            margin-left: 10px !important;
+        }
+
+        .nmt0 {
+            width: 23% !important;
+            margin-right: 1%;
+        }
+
+        .nmt1 {
+            width: 23% !important;
+            margin-right: 1%;
+        }
+
+        .grupove {
+            width: 23% !important;
+            margin-right: 1%;
+        }
+
+        .indyvid {
+            width: 23% !important;
+        }
+        }
+
+        .mainNazva1 {
+            font-size: 32px !important;
+            margin-right: 0 !important;
+        }
+
+        .mainNazva2 {
+            font-size: 70px !important;
+            margin-right: 220px !important;
+        }
+
+        .zaklyk0 {
+            font-size: 38px !important;
+            margin-right: 280px !important;
+        }
+
+        @media (max-width: 1400px) and (min-width: 1350px) {
+            .mainNazva1 {
+            font-size: 32px !important;
+            margin-right: 0 !important;
+        }
+
+        .mainNazva2 {
+            font-size: 70px !important;
+            margin-right: 240px !important;
+        }
+
+        .zaklyk0 {
+            font-size: 38px !important;
+            margin-right: 300px !important;
+        }
+        }
+
+        .motyvacia {
+            display: none;
+        }
+
+        .contact { 
+            height: 310px !important;
+            }
+
+        .kursy {
+            height: 330px !important;
+        }
+
+        .proNavchannia h2 {
+            font-size: 35px !important;
+        }
+
+        .proNavchannia li {
+            font-size: 25px !important;
+        }
+
+        /*.pidhid {
+            width: 100% !important;
+        }
+
+        .gnuchkist {
+            width: 120% !important;
+        }
+
+        .pidtrymka {
+            width: 110% !important;
+        }
+
+        .she {
+            width: 72% !important;
+            height: 175px !important;
+        } */
+
+        .kontakty0 {
+            height: 600px !important;
+        }
+        }
+
+        /*менше за 1400 знаходиться вище*/
+
+        body {
+            font-weight: 450;
+        }
+
+        .tytul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            height: 60px;
+        }
+
+        .nazva {
+            font-size: 60px;
+            position: relative;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .nazva::after {
+            content: '.';
+            color: #00FFFF;
+            font-size: 60px;
+            position: absolute;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .navigator {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navigator a {
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            position: relative;
+        }
+
+        .navigator a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #00FFFF;
+        }
+
+        .nextTytul {
+            margin: 0;
+            background-image: url(needed/nextTytul.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 370px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            color: white;
+        }
+
+        /*Для екранів з шириною більше за 1650*/
+
+        @media (min-width: 1650px) {
+            .tytul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            height: 90px;
+            }
+
+            .nazva {
+            font-size: 90px;
+            position: relative;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .nazva::after {
+            content: '.';
+            color: #00FFFF;
+            font-size: 90px;
+            position: absolute;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .navigator a {
+            text-decoration: none;
+            color: white;
+            font-size: 250%;
+            position: relative;
+        }
+
+        .nextTytul {
+            margin: 0;
+            background-image: url(needed/nextTytul.jpg);
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            color: white;
+            }
+
+        .mainNazva {
+                margin-right: 6%;
+            }
+        }
+
+        /*the end of the 1650*/
+
+        @media (min-width: 1700px) {
+            .reklama1 {
+                padding-left: 11% !important;
+            }
+            .contact {
+                margin-right: 11% !important;
+            }
+
+            .motyvacia {
+            background-image: url(needed/seredyna.png);
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            text-align: left;
+            color: white;
+            height: 600px !important;
+        }
+
+        .motyv1 {
+            font-size: 600%;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-left: 150px;
+            font-family: "Merriweather", serif;
+            margin-top: 150px;
+        }
+
+        .motyv1::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 100%;
+            font-weight: bold;
+        }
+
+        .motyv1::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 100%;
+            font-weight: bold;
+        }
+
+        .motyv2 {
+            color: #00FFFF;
+            font-size: 300%;
+            margin: 0 0 40px 700px;
+            font-weight: bold;
+        }
+
+        .motyv3 {
+            display: none;
+        }
+
+        .proNavchannia h1 {
+            font-size: 80px !important;
+        }
+
+        .proNavchannia h1 span::after {
+            font-size: 80px !important;
+        }
+
+        .proNavchannia h1 span::before {
+            font-size: 80px !important;
+        }
+
+        .pidhid {
+            width: 61% !important;
+        }
+
+        .gnuchkist {
+            width: 78% !important;
+        }
+
+        .pidtrymka {
+            width: 64% !important;
+        }
+
+        .she {
+            width: 42% !important;
+            height: 175px !important;
+        }
+
+        .proNavchannia h2 {
+            font-size: 400% !important;
+        }
+
+        .proNavchannia li {
+            font-size: 200% !important;
+        }
+
+        .granit h1 {
+            font-size: 55px !important;
+        }
+
+        .granit span {
+            font-size: 70px !important;
+        }
+
+        .buttons1 a {
+            font-size: 60px !important;
+        }
+        }
+
+        @media (min-width: 1800px) {
+            .mainNazva {
+                margin-right: 5% !important;
+            }
+            .logo {
+            width: 400px !important;
+            height: 400px !important;
+        }
+        }
+
+        @media (min-width: 1900px) {
+            .navigator a {
+            text-decoration: none;
+            color: white;
+            font-size: 300%;
+            position: relative;
+        }
+        .mainNazva1 {
+            font-size: 60px !important;
+        }
+        .mainNazva2 {
+            font-size: 120px !important;
+        }
+        .zaklyk0 {
+            font-size: 60px !important;
+        }
+
+        #Ph::before {
+            font-size: 70px !important;
+        }
+
+        #Ph::after {
+            font-size: 70px !important;
+        }
+
+        .proNavchannia li {
+            font-size: 230% !important;
+        }
+            }
+
+        @media (min-width: 2050px) {
+        .logo {
+            width: 450px !important;
+            height: 450px !important;
+        }
+
+        .mainNazva {
+                margin-right: 10% !important;
+            }
+        }
+
+        /*кінець змін*/
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 35px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+         @media (min-width: 1400px) and (max-width: 1495px) {
+            .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-left: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .kontakty0 {
+            height: 600px !important;
+        }
+         }
+
+        .mainNazva {
+            text-align: center;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .zaklyk0 {
+            font-size: 45px;
+            margin-right: 320px;
+            margin-top: 30px;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 3s forwards;
+        }
+
+        .mainNazva .mainNazva1 {
+            font-size: 40px;
+            margin-right: 230px;
+            margin-top: -35px;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 1s forwards;
+        }
+
+        .mainNazva .mainNazva2 {
+            font-size: 85px;
+            margin-right: 373px;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 2s forwards;
+        }
+
+        @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Початкове зміщення */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Повернення на місце */
+    }
+}
+
+        .zaklyk0::before {
+            content: 'Д';
+            color: #00FFFF;
+        }
+
+        .zaklyk0::after {
+            content: '!';
+            color: #00FFFF;
+        }
+
+        .mainNazva2::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 85px;
+        }
+
+        .mainNazva2::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 85px;
+            position: absolute;
+        }
+
+        #Ph::before {
+            content: 'Ф';
+            color: #00FFFF;
+            font-size: 40px;
+        }
+
+        #Ph::after {
+            content: 'М';
+            color: #00FFFF;
+            font-size: 40px;
+        }
+
+
+
+        .reklama {
+            background-color: #fafafa;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: black;
+        }
+
+        .reklama1 {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            margin-top: -5px;
+            margin-left: -15px;
+        }
+
+        .reklama10 {
+            font-weight: bold;
+            font-size: 50px;
+            color: #01257D;
+            font-family: "Merriweather", serif;
+        }
+
+        .reklama10::after {
+            content: '!';
+            color: #01257D;
+            font-weight: bold;
+            font-size: 50px;
+            font-family: "Merriweather", serif;
+            opacity: 0; 
+            transform: translateY(20px);
+            animation: fadeIn 2s ease-out 7s forwards;
+        }
+
+        .reklama11 {
+            font-size: 30px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .reklama1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 35px;
+            padding: 20px 40px 20px 40px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .reklama1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .contact {
+            line-height: 1.5;
+            color: #01257D;
+            font-weight: bold;
+            margin-top: -80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px hsla(234, 100%, 19%, 0.83);
+            font-size: 35px;
+            margin-right: 50px;
+            width: 580px; 
+            height: 270px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .telegram-link {
+            display: flex;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+            margin-top: -25px;
+            font-size: 30px;
+        }
+
+        .telegram-link img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .viber {
+            color: black;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .viber img {
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #empty {
+            color: white;
+        }
+
+        @media (max-width: 1700px) and (min-width: 1400px) {
+
+        .motyvacia {
+            background-image: url(needed/seredyna.png);
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            text-align: left;
+            color: white;
+            height: 400px;
+        }
+
+        .motyv1 {
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-left: 150px;
+            font-family: "Merriweather", serif;
+            margin-top: -10px;
+        }
+
+        .motyv1::before {
+            content: '"';
+            color: #00FFFF;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .motyv1::after {
+            content: '"';
+            color: #00FFFF;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .motyv2 {
+            color: #00FFFF;
+            font-size: 30px;
+            margin: 0 0 40px 600px;
+            font-weight: bold;
+        }
+
+        .motyv3 {
+            font-size: 35px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+        #zaraz {
+            font-weight: bold;
+            color: #00FFFF;
+        }
+        }
+
+
+        .proNavchannia {
+            background-color: #fafafa;
+            color: black;
+        }
+
+        .proNavchannia h1 {
+            text-align: center;
+            color: #01257D;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia h1 span::before {
+            content: '"';
+            color: #01257D;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia h1 span::after {
+            content: '"';
+            color: #01257D;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;
+        }
+
+        .proNavchannia div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .pidhid {
+            width: 71%;
+        }
+
+        .gnuchkist {
+            width: 88%;
+        }
+
+        .pidtrymka {
+            width: 75%;
+        }
+
+        .she {
+            width: 42%;
+            height: 175px;
+        }
+
+        .proNavchannia h2 {
+            margin: 5px 0 10px 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .proNavchannia img {
+            width: 80px;
+            height: 80px;
+            margin-left: 15px;
+        }
+
+        .proNavchannia ul {
+            list-style: disc;
+            padding-left: 0;
+            margin-left: 110px;
+            margin-top: -90px;
+        }
+
+        .proNavchannia li {
+            font-size: 30px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .proNavchannia li::before {
+            content: '•';
+            color: black;
+            font-size: 40px;
+            margin-top: 8px;
+        }
+
+        .buttons1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+
+        .buttons1 a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 40px;
+            padding: 20px 40px 20px 40px;
+            border-radius: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .buttons1 a:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+
+        .kursy {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            height: 280px;
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+        }
+
+        .kursy h1 {
+            text-align: center;
+            font-size: 50px;
+            padding-top: 20px;
+        }
+
+        .kursy h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .kursy span {
+            color: #00FFFF;
+        }
+
+        .kursy span::before {
+            content: '🌟';
+            font-size: 50px;
+        }
+
+        .kursy span::after {
+            content: '🌟';
+            font-size: 50px;
+        }
+
+        .kursy0 {
+            background-color: #fafafa;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .kursy0 div {
+            border: 2px solid #01257D;
+            border-radius: 5px;
+            margin-top: 10px;
+            flex-shrink: 0;
+            justify-content: center;
+            height: fit-content;
+        }
+
+        .nmt0 {
+            width: 24%;
+            margin-right: 1%;
+        }
+
+        .nmt1 {
+            width: 24%;
+            margin-right: 1%;
+        }
+
+        .grupove {
+            width: 24%;
+            margin-right: 1%;
+        }
+
+        .indyvid {
+            width: 24%;
+        }
+
+        .kursy0 h1 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 35px;
+            margin-left: 10px;
+            margin-top: -1px;
+        }
+
+        .kursy0 span {
+            color: #01257D;
+        }
+
+        .nmt0 h1::after {
+            content: '📚';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .mainInfo0 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .grupove h1::after {
+            content: ' 📈';
+            font-size: 50px;
+        }
+
+        .mainInfo3 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .kursy0 h2 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            color: #01257D;
+        }
+
+        .kursy0 ul {
+            text-align: left;
+            font-size: 30px;
+            margin-right: 2px;
+        }
+
+        .opys0 {
+            text-decoration: underline;
+        }
+
+        .nmt1 h1::after {
+            content: '🚀';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .indyvid span::after {
+            content: '👤';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .mainInfo1 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .mainInfo2 {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+
+        .indyvid span {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .parni span::after {
+            content: '👥';
+            font-size: 50px;
+            margin-left: 20px;
+        }
+
+        .cina2 {
+            font-weight: bold;
+            text-align: left;
+            font-size: 35px;
+            margin-left: 10px;
+            margin-top: -1px;
+            color: #01257D;
+        }
+
+        .granit {
+            font-weight: bold;
+            text-align: center;
+            font-family: "Merriweather", serif;
+            background-color: #fafafa;
+        }
+
+        .granit h1 {
+            font-size: 37px;
+            color: black;
+        }
+
+        .granit span {
+            color: #01257D;
+            font-size: 44px;
+        }
+
+        .proNavchannia div:hover {
+            background-color: #01257D;
+            color: #00FFFF;
+        }
+
+        .kursy0 div:hover {
+            color: #00FFFF;
+            background-color: #022171;
+        }
+
+        .kursy0 div:hover span  {
+            color: #00FFFF;
+        }
+
+        .kursy0 div:hover h2  {
+            color: #00FFFF;
+        }
+
+        .kursy0 div:hover a {
+            color: #00FFFF;
+            background-color: #01257D;
+        }
+
+        .zakaz {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .zakaz a {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 20px 40px 20px 40px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        #proGrupove {
+            font-size: 15px;
+            text-align: left;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+
+        .kontakty0 {
+            background-image: url(needed/fon.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            height: 530px;
+        }
+
+        .kontakty0 h1 {
+            font-family: "Merriweather", serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-left: 15px;
+        }
+
+        #toivo {
+            padding: 20px;
+        }
+
+        #soivo {
+            font-size: 35px;
+            padding-left: 20px;
+        }
+
+        .dopomoga {
+            display: flex;
+            font-size: 45px;
+            margin-top: 5px;
+            margin-left: 105px;
+            color: #00FFFF;
+            font-weight: bold;
+        }
+
+        .kontakty0 img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-right: 15px;
+        }
+
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="tytul">
+        <h1 class="nazva">MPH school</h1>
+        <div class="navigator">
+            <a href="#pro_navchannia">Про навчання</a>
+            <a href="#dostupni_kursy">Доступні курси</a>
+            <a href="#kontakty">Контакти & FAQ</a>
+        </div>
+    </div>
+
+    <div class="nextTytul">
+        <div class="logo">
+            <img src="needed/Designer.jpeg" alt="Logo">
+        </div>
+        <div class="mainNazva">
+            <div class="mainNazva1">Онлайн <span id="Ph">із</span>ат школа</div><br>
+            <div class="mainNazva2">Ньютончики</div>
+            <br>
+            <div class="zaklyk0">оступна освіта - кожному</div>
+        </div>
+    </div>
+
+    <div class="reklama">
+        <div class="reklama1">
+            <div class="reklama10">Відчуйте перевагу <br> нашої школи на практиці</div>
+            <div class="reklama11">Отримайте безкоштовне заняття, <br> щоб зрозуміти, що математика - це легко!</div>
+            <div class="buttons">
+                <a href="https://forms.gle/shgYs1Q1Lu9NakPW6" target="_blank" class="btn">Записатися на безкоштовне заняття</a>
+                <a href="#dostupni kursy" class="btn">Доступні курси</a>
+            </div>
+        </div>
+
+        <div class="contact">
+            Або напишіть нам <br>за уточненням інформації:
+            <ul>
+            <li><div class="telegram-link">@MPHschool3 <div id="empty">..</div><img src="needed/tg.png" alt="Telegram"></div></li>
+            <li><div class="viber">+380 67 131 03 88 <img src="needed/viber.jpg" alt="Viber"></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="motyvacia">
+        <div class="motyv1">Велич людини в її <br>здатності мислити</div>
+        <div class="motyv2">@Блез Паскаль</div>
+        <div class="motyv3">Почніть свій шлях до знань уже сьогодні, адже коли <br>як не саме <span id="zaraz">ЗАРАЗ</span> - найкращий момент, <br>щоб перевершити себе!</div>
+    </div>
+
+    <div id="pro_navchannia" class="proNavchannia">
+        <h1>Чому ваш вибір - це <span>Ньютончики</span>?</h1>
+        <div class="pidhid">
+            <h2>Індивідуальний підхід:</h2>
+            <img src="needed/zirka.png">
+            <ul class="pidhid0">
+                <li>зрозумілий матеріал, адаптований під кожного учня</li>
+                <li>індивідуальна шкала оцінювання учня</li>
+            </ul>
+        </div>
+        <div class="gnuchkist">
+            <h2>Гнучкість та зручність:</h2>
+            <img src="needed/godynnyk.png">
+            <ul class="gnuchkist0">
+                <li>можiливість обрати 2 або 3 заняття на тиждень за зручним графіком</li>
+                <li>зв'язок з учителем та доступ до матеріалів 24/7</li>
+            </ul>
+        </div>
+        <div class="pidtrymka">
+            <h2>Підтримка учнів:</h2>
+            <img src="needed/serce.png">
+            <ul class="pidtrymka0">
+                <li>спільний розбір домашніх завдань</li>
+                <li>безкоштовна консультація, якщо виникають труднощі</li>
+            </ul>
+        </div>
+        <div class="she">
+            <h2>А ще:</h2>
+            <img src="needed/smail.png">
+            <ul id="she0">
+                <li>в нас немає суворих учителів</li>
+            </ul>
+        </div>
+        <section class="buttons1">
+            <a href="https://forms.gle/shgYs1Q1Lu9NakPW6" target="_blank">Записатися на безкоштовне заняття</a>
+        </section>
+    </div>
+
+    <div id="dostupni_kursy" class="kursy">
+        <h1>Вітаю, адже Ви вже стали на крок ближче до <br><span>МАТЕМАТИКИ</span></h1>
+        <h2>Оберіть курс, що необхіден Вам:</h2>
+    </div>
+
+    <div class="kursy0">
+        <div class="nmt0">
+            <h1>Курс підготовки до НМТ 2025; <br><span>180 грн/година</span></h1>
+            <section class="mainInfo0">27.01 - 30.05<br><section class="opys0">тричі на тиждень по годині</section><br><span>(1 тиждень = 540 грн)</span></section>
+            <h2>Переваги:</h2>
+            <ul>
+                <li>Свобода в оплаті (можна за 1 заняття/тиждень/місяць)</li>
+                <li>малі групи до 5 людей</li>
+                <li>індивідуальна шкала оцінювання учня</li>
+                <li>доступ до записів занять</li>
+                <li>інтерактивність занять</li>
+                <li>безкоштовні індивідуальні консультації у випадку навчальної прогалини</li>
+            </ul>
+            <section class="zakaz">
+                <a href="https://forms.gle/bsXAHcppbQhQt1C8A">Зв'затися з<br> менеджером</a>
+            </section>
+        </div>
+        <div class="nmt1">
+            <h1>Курс підготовки до НМТ 2025 інтенсив; <br><span>270 грн/90 хв</span></h1>
+            <section class="mainInfo1">27.01 - 30.05<br><section class="opys0">двічі на тиждень по півтори години</section><br><span>(1 тиждень = 540 грн)</span></section>
+            <h2>Переваги:</h2>
+            <ul>
+                <li>Свобода в оплаті (можна за 1 заняття/тиждень/місяць)</li>
+                <li>малі групи до 5 людей</li>
+                <li>індивідуальна шкала оцінювання учня</li>
+                <li>доступ до записів занять</li>
+                <li>інтерактивність занять</li>
+                <li>безкоштовні індивідуальні консультації у випадку навчальної прогалини</li>
+            </ul>
+            <section class="zakaz">
+                <a href="https://forms.gle/bsXAHcppbQhQt1C8A">Зв'затися з<br> менеджером</a>
+            </section>
+        </div>
+        <div class="grupove">
+            <h1>Індивідуальні заняття</h1>
+            <section class="mainInfo2">(для учнів 7-11 класів та студентів 1-2 курсу ВНЗ)</section>
+            <span>230 грн/година</span>
+            <h2>Переваги:</h2>
+            <ul>
+                <li>зручний графік, який обираєте Ви</li>
+                <li>зв'язок з учителем 24/7</li>
+                <li>індивідуальний підхід до кожного учня</li>
+                <li>інтерактивність занять</li>
+            </ul>
+            <section class="zakaz">
+                <a href="https://forms.gle/bsXAHcppbQhQt1C8A">Зв'затися з<br> менеджером</a>
+            </section>
+        </div>
+        <div class="indyvid">
+            <h1>Парні заняття; <br>
+                <section id="proGrupove">для групи з двох учнів
+                </section><span>150 грн/година з людини</span>
+            </h1>
+            <h2>Переваги:</h2>
+            <ul>
+                <li>знижка -25% з людини</li>
+                <li>зручний графік, який обираєте Ви</li>
+                <li>зв'язок з учителем 24/7</li>
+                <li>індивідуальний підхід до кожного учня</li>
+                <li>інтерактивність занять</li>
+            </ul>
+            <section class="zakaz">
+                <a href="https://forms.gle/bsXAHcppbQhQt1C8A">Зв'затися з<br> менеджером</a>
+            </section>
+        </div>
+    </div>
+
+    <div class="granit">
+        <h1>Граніт науки здається міцним,<br><span>але разом ми його прогриземо 😉</span></h1>
+    </div>
+
+    
+    <div id="kontakty" class="kontakty0">
+        <h1 id="toivo">Маєте запитання? Наш менеджер радо відповість!</h1>
+        <div class="dopomoga"><img src="needed/tg.png"> @MPHschool3</div>
+        <div class="dopomoga"><img src="needed/viber.jpg"> +380 67 131 03 88</div>
+        <br>
+        <h1 id="soivo">Також рекомендуємо підписатися на наші соцмережі, де викладачі викладають корисні матеріали для навчання!</h1>
+        <div class="dopomoga"><img src="needed/Instagram_logo_2022.svg.webp"> <img src="needed/tiktok-icon2.png"> MPHschool3</div>
+    </div>
+</body>
+</html>
