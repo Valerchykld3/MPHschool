@@ -437,7 +437,8 @@
         .reklama1 {
             text-align: center;
             margin-top: -5px;
-            margin-left: -15px;
+            /*margin-left: -15px;*/
+            margin: auto;
         }
 
         .reklama10 {
@@ -490,10 +491,11 @@
             width: 50%; 
             height: fit-content;
             box-sizing: border-box;
-            margin-top: 30px;
+            margin-top: 30px !important;
             align-items: center;
-            margin-left: 25%;
+            /*margin-left: 25%;*/
             padding: 0 20px 0 20px;
+            margin: auto;
         }
 
         .telegram-link {
@@ -570,7 +572,8 @@
         .reklama1 {
             text-align: center;
             margin-top: -5px;
-            margin-left: -15px;
+            /*margin-left: -15px;*/
+            margin: auto;
         }
 
         .reklama10 {
@@ -623,10 +626,11 @@
             width: 50%; 
             height: fit-content;
             box-sizing: border-box;
-            margin-top: 20px;
+            margin-top: 20px !important;
             align-items: center;
-            margin-left: 25%;
+            /*margin-left: 25%;*/
             padding: 0 10px 0 10px;
+            margin: auto;
         }
 
         .telegram-link {
@@ -681,7 +685,8 @@
         .reklama1 {
             text-align: center;
             margin-top: -5px;
-            margin-left: -15px;
+            /*margin-left: -15px;*/
+            margin: auto;
         }
 
         .reklama10 {
@@ -731,10 +736,11 @@
             width: fit-content; 
             height: fit-content;
             box-sizing: border-box;
-            margin-top: 15px;
+            margin-top: 15px !important;
             align-items: center;
-            margin-left: 20%;
+            /*margin-left: 20%;*/
             padding: 0 10px 0 10px;
+            margin: auto;
         }
 
         .telegram-link {
@@ -839,9 +845,10 @@
             width: fit-content; 
             height: fit-content;
             box-sizing: border-box;
-            margin-top: 15px;
+            margin-top: 15px !important;
             align-items: center;
-            margin-left: 10%;
+            /*margin-left: 10%;*/
+            margin: auto;
         }
 
         .telegram-link {
@@ -1066,10 +1073,21 @@
             font-size: 25px !important;
         }
         }
-        @media (max-width: 600px) {
+        @media (max-width: 600px) and (min-width: 450px) {
         .buttons1 a {
             font-size: 18px !important;
             text-align: center;
+        }
+        }
+        @media (max-width: 450px) and (min-width: 390px) {
+        .buttons1 a {
+            font-size: 14px !important;
+        }
+        }
+        @media (max-width: 390px) {
+        .buttons1 a {
+            font-size: 11px !important;
+            text-align: center !important;
         }
         }
         
